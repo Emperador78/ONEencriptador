@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto - Alura/ONE - Manlio Wydler</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Inter:wght@100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <img id="logo" src="images/logo.JPG" alt="logo">
+</header>
+    <main>
+        <section class="texto" id="ingresar-texto">
+            
+            <textarea id="texto-ingresado" name="texto" rows="16" cols="50">Ingrese el texto aquí.</textarea><br>
+            <p class="texto" id="exclamacion" ><img id="sign" src="images/sign.JPG" alt="Exclamacion">Acepta letras Minusculas, Mayusculas con y sin acento. Punto, coma, y numeros</p>
+            <button class="boton" id="boton-cifrar" onclick='cifrar();'>Encriptar</button>
+            <button class="boton" id="boton-descifrar" onclick='descifrar();'>Desencriptar</button>
+        </section>
+        <section class="texto" id="mostrar-texto">
+            <img id="sinT" src="images/sinTexto.JPG" alt="Sin-texto">
+            <p id="texto-intervenido">Ningún mensaje fue encontrado</p>
+            <p id="texto-ayuda">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button class="boton" id="boton-copiar" onclick='copiar();' style="visibility: hidden;" >Copiar</button> <!-- hidden/visible -->
+        </section>
+    </main>
+    <footer>
+        <p class="texto" >Encriptador de Texto - Alura/ONE - </p>
+        <p class="texto" >Manlio Wydler 2024</p>
+    </footer>
+    <script src="index.js" defer></script>
+</body>
+
+</html>
